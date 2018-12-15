@@ -12,9 +12,9 @@ href = "css/style.css" />
 <div class = "nav">
     <ul>
         <li id = "logo"> I-Reporter</li>
-        <li id = "topnav">home</li>
-        <li id = "topnav"><button onclick="Signup()">signup</button></li>
-        <li id = "topnav"><button onclick="Login()">login</button></li>
+        <a href = "index.html"><li id = "topnav">home</li></a>
+        <li id = "topnav"onclick="Signup()">signup</li>
+        <li id = "topnav"onclick="Login()">login</li>
         <li id = "topnav">about us</li>
      
         
@@ -26,7 +26,7 @@ href = "css/style.css" />
     
     <div id ="main-message" style="background-image: url(img/cor.jpg);">
     <div id ="message">REPORT CORRUPTION</div>
-    <div id ="messag">dont be silent</div>
+    <div id ="messag">Dont be silent</div>
     <div id = "login">
         
         <p>LOGIN</p>
@@ -34,9 +34,8 @@ href = "css/style.css" />
         <p><input type = "text" name ="enter username" required></p>
         <p>password</p>
         <p><input type ="text" name = "enter password" required></p>
-
-        <p><button type ="submit">submit</button></p>
-        <p>If you dont have an account signup here</p>
+        <p><a href="html/user_dash.html"><button type ="submit">submit</button></a></p>
+        <p>If you dont have an account signup <span class = "sign" onclick="Signup()">here</span></p>
     </div>
     <div id = "signup">
         
@@ -53,7 +52,7 @@ href = "css/style.css" />
             <p><input type ="text" name = "enter password" required></p>
     
             <p><button type ="submit">submit</button></p>
-            <p>If you dont have an account signup here</p>
+            
         </div>
     <!-- <div id ="messag">it affects all of us</div> -->
     </div>

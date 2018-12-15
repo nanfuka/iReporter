@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel = "stylesheet"
+type = "text/css"
+href = "../css/style.css" />
+ <script src = "../js/general.js"></script>
+</head>
+<body>
+
+<div class = "nav">
+    <ul>
+        <li id = "logo"> I-Reporter</li>
+        <a href = "../index.html"><li id = "topnav">home</li></a>
+        
+        <li id = "topnav" onclick="Login()">logout</li>
+        <li id = "topnav">about us</li>        
+    </ul>   
+</div>
+<div class ="wrap">
+    <fieldset class = "sideone">
+            <div id = "reporter-record">
+                <h1>History of reports you have made</h1>
+                <p><b>click on the subject below to see the full detail of report</b></p>
+        
+                <div id = "corruption-cases">
+                    <p id = "bribe"  onclick="Bribe()">1. Bribery extorted from passenger by afande kajejema</p>
+                    <p id ="embezzle"  onclick="Embezzle()">2. Embezzlemtnt by pharmacist Nanjego</p>
+                    <p id = "extort"  onclick="Extort()">3. Extortion of money from parents by headmaster</p>
+                </div>
+              
+            </div>  
+         </fieldset>
+    <div class = "myreports">  
+    <fieldset class = "sidetwo">
+        <h1>REPORT DETAILS</h1>
+            <div id = "bribnery">
+                    <p class = "title">date of offense:</p>
+                    <p> 12,02,2014</p>
+                   <p class = "title">form of corruption:</p>
+                   <p> bribery</p> 
+                   <p class = "title">place where corruption was done:</p>
+                   <p> Masaka-Road</p>
+                   <p class = "title">Name of offending officer</p>
+                   <p> Afande Kajejema</p>
+                  <p class = "title">description of event:</p>
+                    <p> I saw Kajejema recieve a bribe and after he let a truck in poor condition go ahesd to Masaka</p><br>
+                   <p class = "title">My Recomendation:</p>
+                   <p id = "intervantion"> Kindly chase the nigger from that rank he is so greedy</p>
+                   <p class = "title">Status of Record:</p>
+                   <p id = "status"> under investigation</p>
+                   <button onclick="Status()">change Status</button>
+
+            </div>
+
+            <div id = "embezkmler">
+                    <p class = "title">date of offense:</p>
+                    <p> 12,02,2024</p>
+                   <p class = "title">form of corruption:</p>
+                   <p> embezzlement</p> 
+                   <p class = "title">place where corruption was done:</p>
+                   <p>Nakapiriiti pharmacy</p>
+                   <p class = "title">Name of offending officer</p>
+                   <p> Nanjego</p>
+                  <p class = "title">description of event:</p>
+                    <p> Najego without authorisatoin went to teh pharmacy at night and took a box of drugs and stored tehm in her drugshop.</p><br>
+                   <p class = "title">My Recomendation:</p>
+                   <p> Najego without authorisatoin went to teh pharmacy at night and took a box of drugs and stored tehm in her drugshop.</p><br>
+                   <p class = "title">Status of Record:</p>
+                   <p id = "status"> recieved</p>
+                    <button onclick="deletes_intervantion()">delete intervation</button>
+                    <button onclick="edits_intervention()">edit intervation</button>
+                    
+                </div>
+
+                
+         </fieldset> 
+        </div> 
+</div>
+
+<!-- 
+    <div id ="message">REPORT CORRUPTION</div>
+    <div id ="messag">dont be silent</div>  -->
+
+    <!-- <fieldset>
+    <div id = "reporter-record">
+        <h1>History of reports you have made</h1>
+        <p><b>click on the subject below to see the full detail of report</b></p>
+
+        <div id = "corruption-cases">
+            <p id = "bribe"  onclick="Bribe()">1. Bribery extorted from passenger by afande kajejema</p>
+            <p id ="embezzle"  onclick="Embezzle()">2. Embezzlemtnt by pharmacist Nanjego</p>
+            <p id = "extort"  onclick="Extort()">3. Extortion of money from parents by headmaster</p>
+        </div>
+      
+    </div>  
+ </fieldset>   -->
+
+            <!-- <div id = "bribery">
+                <p class = "title">date of offense:</p>
+                <p> 12,02,2014</p>
+               <p class = "title">form of corruption:</p>
+               <p> bribery</p> 
+               <p class = "title">place where corruption was done:</p>
+               <p> Masaka-Road</p>
+               <p class = "title">Name of offending officer</p>
+               <p> Afande Kajejema</p>
+              <p class = "title">description of event:</p>
+                <p> I saw Kajejema recieve a bribe and after he let a truck in poor condition go ahesd to Masaka</p><br>
+               <p class = "title">My Recomendation:</p>
+               <p id = "intervantion"> Kindly chase the nigger from that rank he is so greedy</p>
+                <button onclick="delete_intervantion()">delete intervation</button>
+                <button onclick="edit_intervention()">edit intervation</button> -->
+                 
+            </div>
+
+            <!-- <div id = "embezzler">
+                    <p class = "title">date of offense:</p>
+                    <p> 12,02,2024</p>
+                   <p class = "title">form of corruption:</p>
+                   <p> embezzlement</p> 
+                   <p class = "title">place where corruption was done:</p>
+                   <p>Nakapiriiti pharmacy</p>
+                   <p class = "title">Name of offending officer</p>
+                   <p> Nanjego</p>
+                  <p class = "title">description of event:</p>
+                    <p> Najego without authorisatoin went to teh pharmacy at night and took a box of drugs and stored tehm in her drugshop.</p><br>
+                   <p class = "title">My Recomendation:</p>
+                   <p id = "intervantions"> Kindly chase the nigger from that pharmacy she is a thief</p>
+                    <button onclick="deletes_intervantion()">delete intervation</button>
+                    <button onclick="edits_intervention()">edit intervation</button>
+                    
+                </div> -->
+            </fieldset>
+        </div>
+    
+    </div>
+</div>
+<div class = "footer">
+    
+   
+</div> 
+    
+
+
+</div>
+
+</body>
+</html>

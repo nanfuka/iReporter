@@ -31,8 +31,11 @@ body{
 #messag{
     padding-bottom: 20%;
     text-align: center;
-    font-size: 70%;
+    font-size: 200%;
     padding-top: 2%;
+    color: #B20000;
+    font-family: fantasy;
+
 }
 #message{
     
@@ -95,10 +98,18 @@ body{
     color: rgb(95, 89, 89);
     font-size: 150%;
 }
-
-fieldset{
+.sideone{
+    float: left;
+   
+}
+.sidetwo{
+    float: right;
+    /* display: none; */
+}
+/* fieldset{
+    margin-top: 10%;
     width: 50%;
- margin-left: 23%;
+ margin-left: 23%; */
  
    
 }
@@ -119,10 +130,15 @@ fieldset input{
     font-weight: 300%;
     background-color: #000;
     font-size: 200%;
-    display: none;
+    /* display: none; */
 
 }
-#embezzler{
+.wrap div{
+    display: inline;
+}
+
+
+#embezzmler{
     padding: 0%;
     color:white;
     text-align: center;
@@ -136,6 +152,7 @@ fieldset input{
 }
 fieldset .reps{
     width: 40%;
+    
 }
 #detail{
     padding: 0%;
@@ -168,4 +185,88 @@ fieldset .reps{
 
 }
 
+.userdash{
+    float:left;
+    display: inline;
+}
+
+.userdash-content{
+    /* width: 50%; */
+    float: right;
+    /* font-size: 120%;
+    padding-left: 1%;
+    padding-top: 10%;  */
+    text-align: center;
+}
+.userdash-content button{
+    font-size: 300%;
+    margin-top: 20%;
+    background-color: #004A7F;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-animation: glowing 1500ms infinite;
+    -moz-animation: glowing 1500ms infinite;
+    -o-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
+  }
+  @-webkit-keyframes glowing {
+    0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+    50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+    100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  }
+  
+  @-moz-keyframes glowing {
+    0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+    50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+    100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  }
+  
+  @-o-keyframes glowing {
+    0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+    50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+    100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  }
+  
+  @keyframes glowing {
+    0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+    50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+    100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  }
+.form{
+    font-size: 110%;
+    background-color: antiquewhite;
+}
+button{
+    background-color: rgb(181, 187, 190);
+    font-size: 120%;
+    flex-grow: inherit;
+}
+.sign{
+    color: #B20000;
+}
+li{
+    color: white;
+    text-decoration: none;
+}
+#corruption-cases{
+    text-align: left;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size: 150%;
+    
+}
+#embezkmler{
+    display: none;
+}
+#bribnery{
+    
 }

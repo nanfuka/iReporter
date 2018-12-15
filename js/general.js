@@ -24,7 +24,31 @@ function delete_intervantion(){
 
 }
 
-// function deletes_intervantion(){
+ function Bribe(){    
+    document.getElementById("embezzmler").style.display = "none";
+    // document.getElementById("embezkmler").style.display = "none" 
+    // document.getElementsById("corruption-cases").style.display = "none"
+ }
+ function Embezzle(){
+    document.getElementById("bribnery").style.display = "none"
+    document.getElementById("embezkmler").style.display = "block"
+    // document.getElementById("extortion").style.display = "none" 
+  
+
+ }
+ function Status(){
+    var edit = prompt ("please edit edit the status of the Report")
+    if (edit != null){
+        document.getElementById("status").innerHTML= edit
+    }
+}
+ 
+//  function Extort(){
+//     document.getElementById("bribnery").style.display = "none"
+//     document.getElementById("embezzmler").style.display = "none";
+//     document.getElementById("extortion").style.display = "block"   
+//  }
+//  function deletes_intervantion(){
 //     if (confirm("do you really want to delete this intervantion record")){
 //         var element =document.getElementById("intervantions");
 //         element.parentNode.removeChild(element)
@@ -38,15 +62,4 @@ function delete_intervantion(){
 //         document.getElementById("intervantions").innerHTML= edit
 //     }
 // }
- function Bribe(){
-    document.getElementById("bribery").style.display = "block"
-    document.getElementById("embezzler").style.display = "none"
-
- }
- function Embezzle(){
-    document.getElementById("embezzler").style.display = "block"
-//     document.getElementById("bribery").style.display = "none"
-  
-
- }
 
