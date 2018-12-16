@@ -327,17 +327,19 @@ li{
       display: none;
     }
      .nav li{
-        display: block;
+        /* display: block; */
         color: black;
-       
-        
+   
     } 
-    .nav a{
+    #logo{
+        color: white;
+    }
+    /* .nav a{
         display: block;
         color: black;
         
         
-    }
+    } */
 .firstnav{
     display: none;
 } 
@@ -358,4 +360,34 @@ li{
     font-size: 100%;
   
   }
+  #login{
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(192, 192, 206);
+    color: #000;
+    width: 70%;
+   border-left: 0%;
+   margin-left: 0%;
+   padding: 0%;
 }
+#admin-login{
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(192, 192, 206);
+    color: #000;
+    width: 70%;
+   border-left: 0%;
+   margin-left: 0%;
+   padding: 0%;
+}
+#signup{
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(192, 192, 206);
+    color: #000;
+    width: 70%;
+   border-left: 0%;
+   margin-left: 0%;
+   padding: 0%;
+}
+  }
