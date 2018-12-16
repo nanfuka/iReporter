@@ -10,16 +10,43 @@ href = "css/style.css" />
 <body>
 <script src = "js/general.js"></script> 
 <div class = "nav">
-    <ul>
+
+    <ul class = "firstnav">
         <li id = "logo"> I-Reporter</li>
         <a href = "index.html"><li id = "topnav">home</li></a>
         <li id = "topnav"onclick="Signup()">signup</li>
-        <li id = "topnav"onclick="Login()">login</li>
         <li id = "topnav">about us</li>
-     
-        
+        <div id = "topnav">
+        <div class="dropdown">
+                <li class="dropbtn">login</li>
+                <div class="dropdown-content">
+                  <p onclick="Login()">user-login</p>
+                  <p onclick="AdminLogin()">admin-login</p>
+                  
+                </div>
+              </div>
+            
+        </div>
         
     </ul>
+    <div class = "secondnav">
+            <li id = "logo"> I-Reporter</li>
+            <div id = "topnav">
+                    <div class="dropdown">
+                            <li class="dropbtn"><img src="img/nav.png" alt="navigation icon"></li>
+                            <div class="dropdown-content">
+                              <p onclick="Login()">user-login</p>
+                              <p onclick="AdminLogin()">admin-login</p>
+                              <a href = "index.html"><li id = "topnav">home</li></a>
+                              <li id = "topnav"onclick="Signup()">signup</li>
+                              
+                            </div>
+                          </div>
+                        
+                    </div>
+    </div>
+
+
    
 </div>
 <div class = "main" > 
@@ -29,7 +56,7 @@ href = "css/style.css" />
     <div id ="messag">Dont be silent</div>
     <div id = "login">
         
-        <p>LOGIN</p>
+        <p>USER-LOGIN</p>
         <p>username</p>
         <p><input type = "text" name ="enter username" required></p>
         <p>password</p>
@@ -37,6 +64,16 @@ href = "css/style.css" />
         <p><a href="html/user_dash.html"><button type ="submit">submit</button></a></p>
         <p>If you dont have an account signup <span class = "sign" onclick="Signup()">here</span></p>
     </div>
+    <div id = "admin-login">
+        
+            <p>ADMIN-LOGIN</p>
+            <p>username</p>
+            <p><input type = "text" name ="enter username" required></p>
+            <p>password</p>
+            <p><input type ="text" name = "enter password" required></p>
+            <p><a href="html/admin_dash.html"><button type ="submit">submit</button></a></p>
+            <p>If you dont have an account signup <span class = "sign" onclick="Signup()">here</span></p>
+        </div>
     <div id = "signup">
         
             <p>SIGNUP HERE</p>

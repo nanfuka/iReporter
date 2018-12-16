@@ -3,11 +3,21 @@ function Login(){
     document.getElementById("login").style.display = "block"
     document.getElementById("messag").style.display = "none"
     document.getElementById("signup").style.display = "none"
+    document.getElementById("admin-login").style.display = "none"
+}
+
+function AdminLogin(){
+    document.getElementById("login").style.display = "none"
+    document.getElementById("messag").style.display = "none"
+    document.getElementById("signup").style.display = "none"
+    document.getElementById("admin-login").style.display = "block"   
 }
 function Signup(){
     document.getElementById("signup").style.display = "block"
     document.getElementById("messag").style.display = "none"
     document.getElementById("login").style.display = "none"
+    document.getElementById("admin-login").style.display = "none"
+    
 }
 function edit_intervention(){
     var edit = prompt ("please edit your intervation")

@@ -6,6 +6,8 @@ body{
     color: white;
     
 }
+button:hover{background-color: #3e8e41;}
+
 #logo{
     font-size: 200%;
 
@@ -37,6 +39,8 @@ body{
     font-family: fantasy;
 
 }
+
+
 #message{
     
     padding-top: 2%;
@@ -56,6 +60,20 @@ body{
 
     display: none;
 }
+#admin-login{
+    text-align: center;
+    font-size: 50%;
+    background-color: rgb(192, 192, 206);
+    color: #000;
+    width: 30%;
+   border-left: 60%;
+   margin-left: 36%;
+   padding: 0%;
+   
+
+    display: none;
+}
+
 #signup{
     text-align: center;
     font-size: 50%;
@@ -267,6 +285,77 @@ li{
 #embezkmler{
     display: none;
 }
-#bribnery{
-    
+.dropbtn {
+    /* background-color: #4CAF50; */
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(14, 11, 11);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .secondnav{
+    display: none;
+}
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+  @media screen and (max-width: 600px) {
+    div#messag {
+      display: none;
+    }
+     .nav li{
+        display: block;
+        color: black;
+       
+        
+    } 
+    .nav a{
+        display: block;
+        color: black;
+        
+        
+    }
+.firstnav{
+    display: none;
+} 
+.secondnav{
+    display: block;
+}
+
+  div#message {
+      display: none;
+    }
+  
+  ul li {
+      display: block;
+      list-style: none;
+      padding: .36em 0.9375em;
+  }
+  #logo{
+    font-size: 100%;
+  
+  }
 }
