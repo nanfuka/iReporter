@@ -57,39 +57,47 @@ href = "css/style.css" />
     <div id = "login">
         
         <p>USER-LOGIN</p>
-        <p>username</p>
-        <p><input type = "text" name ="enter username" required></p>
-        <p>password</p>
-        <p><input type ="text" name = "enter password" required></p>
-        <p><a href="html/user_dash.html"><button type ="submit">submit</button></a></p>
-        <p>If you dont have an account signup <span class = "sign" onclick="Signup()">here</span></p>
+        <form action="html/user_dash.html">
+                username:<br>
+                <input type="text" name="username" required>
+                <br>
+                password:<br>
+                <input type="password" name="password" required>
+                <br><br>
+                <input type="submit" value="Submit">
+                <p>If you dont have an account signup <span class = "sign" onclick="Signup()">here</span></p>
+              </form> 
+
+    
     </div>
     <div id = "admin-login">
-        
+
             <p>ADMIN-LOGIN</p>
-            <p>username</p>
-            <p><input type = "text" name ="enter username" required></p>
-            <p>password</p>
-            <p><input type ="text" name = "enter password" required></p>
-            <p><a href="html/admin_dash.html"><button type ="submit">submit</button></a></p>
-            <p>If you dont have an account signup <span class = "sign" onclick="Signup()">here</span></p>
+            <form action="html/admin_dash.html">
+                    username:<br>
+                    <input type="text" name="username" required>
+                    <br>
+                    password:<br>
+                    <input type="password" name="password" required>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                    <p>If you dont have an account signup <span class = "sign" onclick="Signup()">here</span></p>
+                  </form> 
         </div>
     <div id = "signup">
-        
             <p>SIGNUP HERE</p>
-            <p>first name</p>
-            <p><input type = "text" name ="enter first name" required></p>
-            <p>last name</p>
-            <p><input type = "text" name ="enter lastname" required></p>
-            <p>username</p>
-            <p><input type = "text" name ="enter username" required></p>
-            <p>email</p>
-            <p><input type = "text" name ="enter email" required></p>
-            <p>password</p>
-            <p><input type ="text" name = "enter password" required></p>
-    
-            <p><button type ="submit">submit</button></p>
-            
+            <form action="#">
+                username:<br>
+                <input type="text" name="username" required>
+                <br>
+                email:<br>
+                <input type="email" name="email" required>
+                <br>
+                password:<br>
+                <input type="password" name="password" required>
+                <br><br>
+                <input type="submit" value="Submit">
+              </form>             
         </div>
     <!-- <div id ="messag">it affects all of us</div> -->
     </div>
