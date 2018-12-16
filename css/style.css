@@ -326,6 +326,16 @@ li{
     div#messag {
       display: none;
     }
+    #userdash div{
+        display: block;
+    }
+    .userdash img{
+        display: none;
+    }
+.reportbutton{
+    width: 40%;
+}
+
      .nav li{
         /* display: block; */
         color: black;
@@ -340,6 +350,9 @@ li{
         
         
     } */
+#privacy{
+    width: 50%;
+}
 .firstnav{
     display: none;
 } 
