@@ -104,9 +104,24 @@ input[type=submit]:hover {
   background-size: 100% 100%; */
 }
 #main-message{
-  display: flex;
+  display: column;
+  text-align: center;
   justify-content: space-between;
   background-color: #B20000;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  color: white;
+  justify-content: center;
+  padding-bottom: 15%;
+  padding-top: 10%;
+}
+.main p{
+  padding-bottom: 70%;
+  text-align: center;
+}
+.main h1{
+  text-align: center;
 }
 
 footer{
@@ -125,4 +140,9 @@ justify-content: space-evenly;
 }
 .userdash{
   display: column;
+}
+.nav p{
+  display: inline;
+  color: black;
+  padding-right: 10%;
 }
