@@ -10,126 +10,70 @@ href = "css/style.css" />
 <body>
 <script src = "js/general.js"></script> 
 <div class = "nav">
+<ul>
+    
+    <li>home</li>
+    <li>about</li>
+    <li id = "login" onclick="Login()">user-login</li>
+    
+    <li id = "signups" onclick = "Signup()">signup</li>
+    <!-- <li id = "signup" onclick="Signup()">signup</li> -->
+</ul> 
+</div>
+<div id = "signin">
+    <form action="html/user_dash.html">
+    <P class = "header">USER-LOGIN</P>
+    <p class = "in">Username:</p> <input type = "text" name = Username required>
+    <p class = "in">Password:</p> <input type = "password" name = password required>
+    <input type = "submit" value = "Submit">
+    </form>
+</div>
+<div id = "signinadmin">
+        <form action="html/admin_dash.html">
+        <P class = "header">ADMIN-LOGIN</P>
+        <p class = "in">Username:</p> <input type = "text" name = Username required>
+        <p class = "in">Password:</p> <input type = "password" name = password required>
+        <input type = "submit" value = "Submit">
+        </form>
+    </div>
 
-    <ul class = "firstnav">
-        <li id = "logo"> I-Reporter</li>
-        <a href = "index.html"><li id = "topnav">home</li></a>
-        <li id = "topnav"onclick="Signup()">signup</li>
-        <li id = "topnav">about us</li>
-        <div id = "topnav">
-        <div class="dropdown">
-                <li class="dropbtn">login</li>
-                <div class="dropdown-content">
-                  <p onclick="Login()">user-login</p>
-                  <p onclick="AdminLogin()">admin-login</p>
-                  
-                </div>
-              </div>
+<div id = "signup">
+    <P class = "header">SIGNUP</P>
+    <p class = "in">Username:</p> <input type = "text" name = Username required>
+    <p class = "in">Email:</p> <input type = "email" name = email required>
+    <p class = "in">Password:</p> <input type = "password" name = password required>
+    <input type = "submit" value = "Submit">
+</div>
+
+
+
+<div id ="main-message" style="background-image: url(img/cor.jpg);">
+    <div class = "main" > 
+            <h1>REPORT CORRUPTION</h1>
             
         </div>
-        
-    </ul>
-    <div class = "secondnav">
-            <li id = "logo"> I-Reporter</li>
-            <div id = "topnav">
-                    <div class="dropdown">
-                            <li class="dropbtn"><img src="img/nav.png" alt="navigation icon"></li>
-                            <div class="dropdown-content">
-                              <!-- <p onclick="Login()">user-login</p>
-                              <p onclick="AdminLogin()">admin-login</p> -->
-                              <a href = "index.html"><li id = "topnav">home</li></a>
-                              <li id = "topnav"onclick="Signup()">signup</li>
-                              <li id = "topnav"><a href = "index.html">home</a></li>
-                            </div>
-                          </div>
-                        
-                    </div>
-    </div>
-
-
-   
 </div>
-<div class = "main" > 
-    
-    <div id ="main-message" style="background-image: url(img/cor.jpg);">
-    <div id ="message">REPORT CORRUPTION</div>
-    <div id ="messag">Dont be silent</div>
-    <div id = "login">
-        
-        <p>USER-LOGIN</p>
-        <form action="html/user_dash.html">
-                username:<br>
-                <input type="text" name="username" required>
-                <br>
-                password:<br>
-                <input type="password" name="password" required>
-                <br><br>
-                <input type="submit" value="Submit">
-                <p>If you dont have an account signup <span class = "sign" onclick="Signup()">here</span></p>
-              </form> 
-
-    
-    </div>
-    <div id = "admin-login">
-
-            <p>ADMIN-LOGIN</p>
-            <form action="html/admin_dash.html">
-                    username:<br>
-                    <input type="text" name="username" required>
-                    <br>
-                    password:<br>
-                    <input type="password" name="password" required>
-                    <br><br>
-                    <input type="submit" value="Submit">
-                    <p>If you dont have an account signup <span class = "sign" onclick="Signup()">here</span></p>
-                  </form> 
+<footer>
+        <div class = "contacts">
+                <p>contact us</p> <br>
+            tel:0412586954<br>
+            email:ireporter@irep.com</div>
+           <div class = "about">
+               <p>about us</p><br>
+                our mission and objectives<br>
+                privacy policy 
+           </div>
+           <div class = "info">
+            <p>corruption</p><br>
+                What is corruption<br>
+                how does it affect you<br>
+                current statistics on corruption
         </div>
-    <div id = "signup">
-            <p>SIGNUP HERE</p>
-            <form action="#">
-                username:<br>
-                <input type="text" name="username" required>
-                <br>
-                email:<br>
-                <input type="email" name="email" required>
-                <br>
-                password:<br>
-                <input type="password" name="password" required>
-                <br><br>
-                <input type="submit" value="Submit">
-              </form>             
-        </div>
-    <!-- <div id ="messag">it affects all of us</div> -->
-    </div>
-</div>
-<div class = "footer">
-    
-   <div class = "contacts">
-        <p>contact us</p> <br>
-    tel:0412586954<br>
-    email:ireporter@irep.com</div>
-   <div class = "about">
-       <p>about us</p><br>
-        our mission and objectives<br>
-        privacy policy 
-   </div>
-   <div class = "info">
-    <p>corruption</p><br>
-        What is corruption<br>
-        how does it affect you<br>
-        current statistics on corruption
-</div>
-<div class = "info">
-        <p>app user guide</p><br>
-            user guide<br>
-            click here to view details<br>
-            
-    </div>
-</div> 
-    
-
-
-</div>
-
-</body>
-</html>
+        <div class = "info">
+                <p>app user guide</p><br>
+                    user guide<br>
+                    click here to view details<br>
+                    
+            </div>
+        </div> 
+</footer>

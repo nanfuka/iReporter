@@ -4,67 +4,131 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel = "stylesheet"
 type = "text/css"
-href = "../css/style.css" />
+href = "../css/sty.css" />
  <!-- <script src = "js/general.js" -->
 </head>
 <body>
-<!-- <script src = "js/general.js"></script>  -->
-<div id = "userdash"
-<div class = "nav">
-
+<script src = "../js/general.js"></script> 
+<div class = "navigation">
     <ul>
-        <li id = "logo"> I-Reporter</li>
-        <a href = "../index.html"><li id = "topnav">home</li></a>
-        
-        <a href = "../index.html"><li id = "topnav">logout</li></a>
-        <li id = "topnav">about us</li>        
-    </ul>   
-</div>
-<div class = "userdash">
-        <img src="../img/shout.jpg" alt="shout" style="height:500px";>
     
-        <div class = "userdash-content">
-            <fieldset id = "privacy">
-        <P>Have you seen or heard  any case of corruption in your area</P>
-        <p>Please take innitiative to report any corruption case in your area</p>
-        At I-reporter, we observe Absolute confidentiality and treat all teh app users with atmost respect
+        <a href = "../index.html">home</a>
+        <a href = "../index.html">logout</a>
 
-</fieldset>
-<div class = "reportbutton">
-<a href="red_flag.html"><button>CLICK HERE TO REPORT CORRUPTION INSTANTLY</button></a>
+    </ul>  
 </div>
-    </div>
+<div class = "subheader">
+    <button id = "viewreports"  onclick="Viewreports()">click here to view all your reports</button>
+    <button id = "makereports" onclick ="Makereport()">REPORT CORRUPTION CASE</button>
 
-    </div>
-
-<div class = "footer">
-    
-   <div class = "contacts">
-        <p>contact us</p> <br>
-    tel:0412586954<br>
-    email:ireporter@irep.com</div>
-   <div class = "about">
-       <p>about us</p><br>
-        our mission and objectives<br>
-        privacy policy 
-   </div>
-   <div class = "info">
-    <p>corruption</p><br>
-        What is corruption<br>
-        how does it affect you<br>
-        current statistics on corruption
 </div>
-<div class = "info">
-        <p>app user guide</p><br>
-            user guide<br>
-            click here to view details<br>
+
+<div id="container">
+    <form id = "reportform">
+      <ul class="flex-outer">
+            <li>
+                    <p>form of corruption</p>
+                    <ul class="flex-inner">
+                      <li>
+                        <input type="checkbox" id="twenty-to-twentynine">
+                        <label for="twenty-to-twentynine">bribery</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="thirty-to-thirtynine">
+                        <label for="thirty-to-thirtynine">nepotism</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="fourty-to-fourtynine">
+                        <label for="fourty-to-fourtynine">embezzlemnt</label>
+                      </li>
             
+
+                      <li>
+                        <input type="checkbox" id="other">
+                        <label for="other">Other</label>
+                      </li>
+                    </ul>
+                  </li>
+        <li>
+          <label for="first-name">geographical location</label>
+          <input type="text" id="first-name" placeholder="Enter geographical location where offense was committed in terms of ">
+        </li>
+        <li>
+          <label for="last-name">date of offense</label>
+          <input type="text" id="last-name" placeholder="Enter date when offense was committed">
+        </li>
+        <li>
+          <label for="email">office/department of offender</label>
+          <input type="email" id="email" placeholder="Enter office where the above offence was committed">
+        </li>
+        <li>
+          <label for="phone">Name of offender</label>
+          <input type="tel" id="phone" placeholder="Enter the name of officer if known">
+        </li>
+        <li>
+          <label for="message">brief discription of event</label>
+          <textarea rows="6" id="message" placeholder="Enter detail of the event here"></textarea>
+        </li>
+        <button type="submit">in case of further evidence in form of a file or image, upload it here</button>
+          <button type="submit">Submit</button>
+        </li>
+      </ul>
+      
+    </form>
+    <div id = "corruption-cases">
+           <P>To see the full detail of the corruption case, please click on it</P> 
+        <p id = "bribe"  onclick="Bribe()">1. Bribery extorted from passenger by afande kajejema</p>
+            <div id = "bribedetail">
+                    <p class = "title">date of offense:</p>
+                    <p> 12,02,2014</p>
+                   <p class = "title">form of corruption:</p>
+                   <p> bribery</p> 
+                   <p class = "title">place where corruption was done:</p>
+                   <p> Masaka-Road</p>
+                   <p class = "title">Name of offending officer</p>
+                   <p> Afande Kajejema</p>
+                  <p class = "title">description of event:</p>
+                    <p> I saw Kajejema recieve a bribe and after he let a truck in poor condition go ahesd to Masaka</p><br>
+                   <p class = "title">My Recomendation:</p>
+                   <p id = "intervantion"> Kindly chase the nigger from that rank he is so greedy</p>
+                    <button onclick="delete_intervantion()">delete intervation</button>
+                    
+                    <button onclick="edit_intervention()">edit intervation</button> 
+                    <button onclick="edit_geographical()">modify Geographical location</button> <br>
+                    <div class ="pops">
+                    <input id = "editintervation" type = "text" placeholder = "edit intervation">
+        
+                    <button id = "submits" type = "submit" value ="submit">submit</button>
+                    <br>
+                    <input id = "editlocation" type = "text" placeholder = "edit Geographical location">
+        
+                    <button id = "submit" type = "submit" value ="submit" >submit</button>
+</div>
+            </div>
+            <p id ="embezzle"  onclick="Embezzle()">2. Embezzlemtnt by pharmacist Nanjego</p>
+            <div id = "embezzlement">
+                    <p class = "title">date of offense:</p>
+                    <p> 12,02,2024</p>
+                   <p class = "title">form of corruption:</p>
+                   <p> embezzlement</p> 
+                   <p class = "title">place where corruption was done:</p>
+                   <p>Nakapiriiti pharmacy</p>
+                   <p class = "title">Name of offending officer</p>
+                   <p> Nanjego</p>
+                  <p class = "title">description of event:</p>
+                    <p> Najego without authorisatoin went to teh pharmacy at night and took a box of drugs and stored tehm in her drugshop.</p><br>
+                   <p class = "title">My Recomendation:</p>
+                   <p id = "intervantions"> Kindly chase the nigger from that pharmacy she is a thief</p>
+                    <button onclick="deletes_intervantion()">delete intervation</button>
+                    <button onclick="edits_intervention()">edit intervation</button>
+                    
+            </div>
+            
+        </div>
+  </div>
+
+  
     </div>
-</div> 
-    
+    </body>
 
-
-</div>
-</div>
-</body>
-</html>
+ 

@@ -4,38 +4,81 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel = "stylesheet"
 type = "text/css"
-href = "../css/style.css" />
- <script src = "../js/general.js"></script>
+href = "../css/sty.css" />
+ <!-- <script src = "js/general.js" -->
 </head>
 <body>
-
-<div class = "nav">
+<script src = "../js/general.js"></script> 
+<div class = "navigation">
     <ul>
-        <li id = "logo"> I-Reporter</li>
-        <a href = "../index.html"><li id = "topnav">home</li></a>
-        
-        <li id = "topnav" onclick="Login()">logout</li>
-        <li id = "topnav">about us</li>        
-    </ul>   
+    
+        <a href = "../index.html">home</a>
+        <a href = "../index.html">logout</a>
+
+    </ul>  
 </div>
-<div class ="wrap">
-    <fieldset class = "sideone">
-            <div id = "reporter-record">
-                <h1>History of reports you have made</h1>
-                <p><b>click on the subject below to see the full detail of report</b></p>
-        
-                <div id = "corruption-cases">
-                    <p id = "bribe"  onclick="Bribe()">1. Bribery extorted from passenger by afande kajejema</p>
-                    <p id ="embezzle"  onclick="Embezzle()">2. Embezzlemtnt by pharmacist Nanjego</p>
-                    <p id = "extort"  onclick="Extort()">3. Extortion of money from parents by headmaster</p>
-                </div>
-              
-            </div>  
-         </fieldset>
-    <div class = "myreports">  
-    <fieldset class = "sidetwo">
-        <h1>REPORT DETAILS</h1>
-            <div id = "bribnery">
+<!-- <div class = "subheader">
+    <button id = "viewreports"  onclick="Viewreports()">click here to view all your reports</button>
+    <button id = "makereports" onclick ="Makereport()">REPORT CORRUPTION CASE</button>
+
+</div>
+
+<div id="container">
+    <form id = "reportform">
+      <ul class="flex-outer">
+            <li>
+                    <p>form of corruption</p>
+                    <ul class="flex-inner">
+                      <li>
+                        <input type="checkbox" id="twenty-to-twentynine">
+                        <label for="twenty-to-twentynine">bribery</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="thirty-to-thirtynine">
+                        <label for="thirty-to-thirtynine">nepotism</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="fourty-to-fourtynine">
+                        <label for="fourty-to-fourtynine">embezzlemnt</label>
+                      </li>
+            
+
+                      <li>
+                        <input type="checkbox" id="other">
+                        <label for="other">Other</label>
+                      </li>
+                    </ul>
+                  </li>
+        <li>
+          <label for="first-name">geographical location</label>
+          <input type="text" id="first-name" placeholder="Enter geographical location where offense was committed in terms of ">
+        </li>
+        <li>
+          <label for="last-name">date of offense</label>
+          <input type="text" id="last-name" placeholder="Enter date when offense was committed">
+        </li>
+        <li>
+          <label for="email">office/department of offender</label>
+          <input type="email" id="email" placeholder="Enter office where the above offence was committed">
+        </li>
+        <li>
+          <label for="phone">Name of offender</label>
+          <input type="tel" id="phone" placeholder="Enter the name of officer if known">
+        </li>
+        <li>
+          <label for="message">brief discription of event</label>
+          <textarea rows="6" id="message" placeholder="Enter detail of the event here"></textarea>
+        </li>
+        <button type="submit">in case of further evidence in form of a file or image, upload it here</button>
+          <button type="submit">Submit</button>
+        </li>
+      </ul>
+      
+    </form> -->
+    <div id = "corruptioncases">
+           <P>To see the full detail of the corruption case, please click on it</P> 
+        <p id = "bribe"  onclick="Bribe()">1. Bribery extorted from passenger by afande kajejema</p>
+            <div id = "bribedetail">
                     <p class = "title">date of offense:</p>
                     <p> 12,02,2014</p>
                    <p class = "title">form of corruption:</p>
@@ -48,74 +91,25 @@ href = "../css/style.css" />
                     <p> I saw Kajejema recieve a bribe and after he let a truck in poor condition go ahesd to Masaka</p><br>
                    <p class = "title">My Recomendation:</p>
                    <p id = "intervantion"> Kindly chase the nigger from that rank he is so greedy</p>
-                   <p class = "title">Status of Record:</p>
-                   <p id = "status"> under investigation</p>
-                   <button onclick="Status()">change Status</button>
-
-            </div>
-
-            <div id = "embezkmler">
-                    <p class = "title">date of offense:</p>
-                    <p> 12,02,2024</p>
-                   <p class = "title">form of corruption:</p>
-                   <p> embezzlement</p> 
-                   <p class = "title">place where corruption was done:</p>
-                   <p>Nakapiriiti pharmacy</p>
-                   <p class = "title">Name of offending officer</p>
-                   <p> Nanjego</p>
-                  <p class = "title">description of event:</p>
-                    <p> Najego without authorisatoin went to teh pharmacy at night and took a box of drugs and stored tehm in her drugshop.</p><br>
-                   <p class = "title">My Recomendation:</p>
-                   <p> Najego without authorisatoin went to teh pharmacy at night and took a box of drugs and stored tehm in her drugshop.</p><br>
-                   <p class = "title">Status of Record:</p>
-                   <p id = "status"> recieved</p>
-                    <button onclick="deletes_intervantion()">delete intervation</button>
-                    <button onclick="edits_intervention()">edit intervation</button>
+                   <p id = "title">status:</p>
+                   <p id ="status">pending</p>
+                    <button onclick="delete_intervantion()">delete intervation</button>
                     
-                </div>
-
-                
-         </fieldset> 
-        </div> 
+                    <button onclick="edit_intervention()">edit intervation</button> 
+                    <button onclick="edit_geographical()">modify Geographical location</button> <br>
+                    <div class ="pops">
+                    <input id = "editintervation" type = "text" placeholder = "edit intervation">
+        
+                    <button id = "submits" type = "submit" value ="submit">submit</button>
+                    <br>
+                    <input id = "editlocation" type = "text" placeholder = "edit Geographical location">
+                    <p class = "title">status</p>
+                    <p> Under Investigation</p>
+                    <button id = "submit" type = "submit" value ="submit" >submit</button>
 </div>
-
-<!-- 
-    <div id ="message">REPORT CORRUPTION</div>
-    <div id ="messag">dont be silent</div>  -->
-
-    <!-- <fieldset>
-    <div id = "reporter-record">
-        <h1>History of reports you have made</h1>
-        <p><b>click on the subject below to see the full detail of report</b></p>
-
-        <div id = "corruption-cases">
-            <p id = "bribe"  onclick="Bribe()">1. Bribery extorted from passenger by afande kajejema</p>
-            <p id ="embezzle"  onclick="Embezzle()">2. Embezzlemtnt by pharmacist Nanjego</p>
-            <p id = "extort"  onclick="Extort()">3. Extortion of money from parents by headmaster</p>
-        </div>
-      
-    </div>  
- </fieldset>   -->
-
-            <!-- <div id = "bribery">
-                <p class = "title">date of offense:</p>
-                <p> 12,02,2014</p>
-               <p class = "title">form of corruption:</p>
-               <p> bribery</p> 
-               <p class = "title">place where corruption was done:</p>
-               <p> Masaka-Road</p>
-               <p class = "title">Name of offending officer</p>
-               <p> Afande Kajejema</p>
-              <p class = "title">description of event:</p>
-                <p> I saw Kajejema recieve a bribe and after he let a truck in poor condition go ahesd to Masaka</p><br>
-               <p class = "title">My Recomendation:</p>
-               <p id = "intervantion"> Kindly chase the nigger from that rank he is so greedy</p>
-                <button onclick="delete_intervantion()">delete intervation</button>
-                <button onclick="edit_intervention()">edit intervation</button> -->
-                 
             </div>
-
-            <!-- <div id = "embezzler">
+            <p id ="embezzle"  onclick="Embezzle()">2. Embezzlemtnt by pharmacist Nanjego</p>
+            <div id = "embezzlement">
                     <p class = "title">date of offense:</p>
                     <p> 12,02,2024</p>
                    <p class = "title">form of corruption:</p>
@@ -128,23 +122,18 @@ href = "../css/style.css" />
                     <p> Najego without authorisatoin went to teh pharmacy at night and took a box of drugs and stored tehm in her drugshop.</p><br>
                    <p class = "title">My Recomendation:</p>
                    <p id = "intervantions"> Kindly chase the nigger from that pharmacy she is a thief</p>
+                   <p class = "title">status</p>
+                   <p> Under Investigation</p>
                     <button onclick="deletes_intervantion()">delete intervation</button>
                     <button onclick="edits_intervention()">edit intervation</button>
                     
-                </div> -->
-            </fieldset>
+            </div>
+            
         </div>
-    
+  </div>
+
+  
     </div>
-</div>
-<div class = "footer">
-    
-   
-</div> 
-    
+    </body>
 
-
-</div>
-
-</body>
-</html>
+ 
