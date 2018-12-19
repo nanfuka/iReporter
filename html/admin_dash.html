@@ -9,75 +9,21 @@ href = "../css/sty.css" />
 </head>
 <body>
 <script src = "../js/general.js"></script> 
+<p id = "logo">I-reporter</p>
 <div class = "navigation">
-    <ul>
+    
     
         <a href = "../index.html">home</a>
         <a href = "../index.html">logout</a>
 
-    </ul>  
-</div>
-<!-- <div class = "subheader">
-    <button id = "viewreports"  onclick="Viewreports()">click here to view all your reports</button>
-    <button id = "makereports" onclick ="Makereport()">REPORT CORRUPTION CASE</button>
-
+     
 </div>
 
-<div id="container">
-    <form id = "reportform">
-      <ul class="flex-outer">
-            <li>
-                    <p>form of corruption</p>
-                    <ul class="flex-inner">
-                      <li>
-                        <input type="checkbox" id="twenty-to-twentynine">
-                        <label for="twenty-to-twentynine">bribery</label>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="thirty-to-thirtynine">
-                        <label for="thirty-to-thirtynine">nepotism</label>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="fourty-to-fourtynine">
-                        <label for="fourty-to-fourtynine">embezzlemnt</label>
-                      </li>
-            
-
-                      <li>
-                        <input type="checkbox" id="other">
-                        <label for="other">Other</label>
-                      </li>
-                    </ul>
-                  </li>
-        <li>
-          <label for="first-name">geographical location</label>
-          <input type="text" id="first-name" placeholder="Enter geographical location where offense was committed in terms of ">
-        </li>
-        <li>
-          <label for="last-name">date of offense</label>
-          <input type="text" id="last-name" placeholder="Enter date when offense was committed">
-        </li>
-        <li>
-          <label for="email">office/department of offender</label>
-          <input type="email" id="email" placeholder="Enter office where the above offence was committed">
-        </li>
-        <li>
-          <label for="phone">Name of offender</label>
-          <input type="tel" id="phone" placeholder="Enter the name of officer if known">
-        </li>
-        <li>
-          <label for="message">brief discription of event</label>
-          <textarea rows="6" id="message" placeholder="Enter detail of the event here"></textarea>
-        </li>
-        <button type="submit">in case of further evidence in form of a file or image, upload it here</button>
-          <button type="submit">Submit</button>
-        </li>
-      </ul>
-      
-    </form> -->
+    <h1>To see the full detail of the corruption case, please click on it</h1> 
+    <fieldset>
     <div id = "corruptioncases">
-           <P>To see the full detail of the corruption case, please click on it</P> 
-        <p id = "bribe"  onclick="Bribe()">1. Bribery extorted from passenger by afande kajejema</p>
+          
+        <h1 id = "bribe"  onclick="Bribe()">1. Bribery extorted from passenger by afande kajejema</h1>
             <div id = "bribedetail">
                     <p class = "title">date of offense:</p>
                     <p> 12,02,2014</p>
@@ -91,24 +37,18 @@ href = "../css/sty.css" />
                     <p> I saw Kajejema recieve a bribe and after he let a truck in poor condition go ahesd to Masaka</p><br>
                    <p class = "title">My Recomendation:</p>
                    <p id = "intervantion"> Kindly chase the nigger from that rank he is so greedy</p>
-                   <p id = "title">status:</p>
-                   <p id ="status">pending</p>
-                    <button onclick="delete_intervantion()">delete intervation</button>
-                    
-                    <button onclick="edit_intervention()">edit intervation</button> 
-                    <button onclick="edit_geographical()">modify Geographical location</button> <br>
                     <div class ="pops">
                     <input id = "editintervation" type = "text" placeholder = "edit intervation">
-        
-                    <button id = "submits" type = "submit" value ="submit">submit</button>
-                    <br>
-                    <input id = "editlocation" type = "text" placeholder = "edit Geographical location">
+                            <br>
                     <p class = "title">status</p>
                     <p> Under Investigation</p>
+                    <button onclick="Changestatus()">edit report status</button> 
+                    <input id = "changestatus" type = "text" placeholder = "Enter current Report Status">
+
                     <button id = "submit" type = "submit" value ="submit" >submit</button>
 </div>
             </div>
-            <p id ="embezzle"  onclick="Embezzle()">2. Embezzlemtnt by pharmacist Nanjego</p>
+            <h1 id ="embezzle"  onclick="Embezzle()">2. Embezzlemtnt by pharmacist Nanjego</h1>
             <div id = "embezzlement">
                     <p class = "title">date of offense:</p>
                     <p> 12,02,2024</p>
@@ -123,10 +63,12 @@ href = "../css/sty.css" />
                    <p class = "title">My Recomendation:</p>
                    <p id = "intervantions"> Kindly chase the nigger from that pharmacy she is a thief</p>
                    <p class = "title">status</p>
-                   <p> Under Investigation</p>
-                    <button onclick="deletes_intervantion()">delete intervation</button>
-                    <button onclick="edits_intervention()">edit intervation</button>
-                    
+                   <p id = "currentstatus"> Under Investigation</p>
+                    <button onclick="Changestatus()">edit report status</button>
+                    <input id = "changestatus" type = "text" placeholder = "Enter current Report Status">
+
+                    <button id = "submit" type = "submit" value ="submit" >submit</button>
+                  </fieldset>        
             </div>
             
         </div>

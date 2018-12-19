@@ -37,6 +37,12 @@ function edit_intervention(){
     // if (edit != null){
 
     }
+function Changestatus(){
+    document.getElementById("changestatus").style.display = "block"
+    document.getElementById("submit").style.display = "block"
+    var edit = document.getElementById("changestatus").value
+    document.getElementById("currentstatus").innerHTML = edit
+}
 
 function edit_geographical(){
     document.getElementById("editlocation").style.display = "block"

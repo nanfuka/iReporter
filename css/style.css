@@ -141,8 +141,32 @@ justify-content: space-evenly;
 .userdash{
   display: column;
 }
+.nav{
+  display: flex;
+  background-color: rgb(14, 13, 13);
+  justify-content: flex-end;
+  color: white;
+}
 .nav p{
   display: inline;
-  color: black;
-  padding-right: 10%;
+  color: white;
+  padding-right: 2%;
+  text-decoration: none;
+  
+  font-size: 120%;
+  
+}
+.nav a{
+  display: inline;
+  color:white;
+  padding-right: 2%;
+  text-decoration: none;
+  
+  font-size: 100%;
+  
+}
+#logo{
+  font-family: fantasy;
+  display: flex;
+  justify-content: flex-start;
 }
