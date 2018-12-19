@@ -13,15 +13,32 @@ href = "css/style.css" />
 <div class = "nav">
     <!-- <p id = "logo">I-reporter</p> -->
 
-    
+    <div class = "mainnav">
     <p><a href = "index.html">home</a></p>
     
     <p id = "login" onclick="Login()">userlogin</p>
     
     <p id = "signups" onclick = "Signup()">signup</p>
     <!-- <li id = "signup" onclick="Signup()">signup</li> -->
+</div>
+
+    <div class = "medianav">
+            
+        <div class="dropdown">
+             
+            <button class="dropbtn"><img src="img/nav.png" alt="logo"></button>
+            <div class="dropdown-content">
+            <a href ="index.html"></a>
+              <a id = "login" onclick="Login()">userlogin</a>
+              <a href = "index.html">home</a>
+              <a id = "signups" onclick = "Signup()">signup</a>
+            </div>
+          </div>
+    </div>
+
  
 </div>
+<div class = "mainbody">
 <div id = "signin">
     <form action="html/user_dash.html">
     <P class = "header">USER-LOGIN</P>
@@ -81,3 +98,4 @@ href = "css/style.css" />
             </div>
         </div> 
 </footer>
+</div>
