@@ -127,6 +127,7 @@ input[type=submit]:hover {
 footer{
   display: flex;
 justify-content: space-evenly;
+background-image: url(../img/shout.jpg)
 }
 .message{
   font-size: 200%;
