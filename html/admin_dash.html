@@ -1,105 +1,150 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel = "stylesheet"
-type = "text/css"
-href = "../css/sty.css" />
- <!-- <script src = "js/general.js" -->
-</head>
-<body>
-<script src = "../js/general.js"></script> 
-<p id = "logo">I-reporter</p>
-<div class = "navigation">
-    
-    
-        <a href = "../index.html">home</a>
-        <a href = "../index.html">logout</a>
 
-     
-</div>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+      <title>Ireporter</title>
+          <link rel="stylesheet" href="../css/style.css">
+          <script src = "js/general.js"></script> 
+    </head>
+  
+    <body class="home-page" >
+  
+  
+    <div id="container">
+  
+      <header class="header">
+        <div class="company-banner">
+          <img src="../img/log.png" alt="company-logo>" >
+          <h1>I-reporter</h1><span class="clear"></span>
+        </div>
+  
+        <nav>
+          <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+           
+            <li><a href="../index.html">Logout</a></li>
+            <li class="selected"><a href="admin_dash.html">Admin_dash</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- <div class = "subheader">
+          <a href = "admin_dash.html">home</a>
+          <button id = "viewreports"  onclick="Viewreports()">click here to view all your reports</button>
+          <button id = "makereports" onclick ="Makereport()">REPORT CORRUPTION CASE</button>
+      
+      </div>
+      
+      <section class="content">
+			
+          <!--Request Summary-->
+          <!-- <div class="col9 table">
+            <div>
+              <!--Filter Menu-->
+              <!-- <div >
+                
+                <form class="filter">
+                  <fieldset>
+                    <legend>type of incidence:</legend>
+                    <select name="category">
+                      <option value="redflag">type of incidence</option>
+                       <option value="redflag">redflag</option>
+                       <option value="intervation">intervation</option>
+                    </select>
+                      <select name="request_type">
+                       <option value="phones">date</option>
 
-    <h1>To see the full detail of the corruption case, please click on it</h1> 
-    <fieldset>
-    <div id = "corruptioncases">
-          
-        <h1 id = "bribe"  onclick="Bribe()">1. Bribery extorted from passenger by afande kajejema</h1>
-            <div id = "bribedetail">
-                    <p class = "title">date of offense:</p>
-                    <p> 12,02,2014</p>
-                   <p class = "title">form of corruption:</p>
-                   <p> bribery</p> 
-                   <p class = "title">place where corruption was done:</p>
-                   <p> Masaka-Road</p>
-                   <p class = "title">Name of offending officer</p>
-                   <p> Afande Kajejema</p>
-                  <p class = "title">description of event:</p>
-                    <p> I saw Kajejema recieve a bribe and after he let a truck in poor condition go ahesd to Masaka</p><br>
-                   <p class = "title">My Recomendation:</p>
-                   <p id = "intervantion"> Kindly chase the nigger from that rank he is so greedy</p>
-                    <div class ="pops">
-                    <input id = "editintervation" type = "text" placeholder = "edit intervation">
-                            <br>
-                    <p class = "title">status</p>
-                    <p> Under Investigation</p>
-                    <button onclick="Changestatus()">edit report status</button> 
-                    <input id = "changestatus" type = "text" placeholder = "Enter current Report Status">
+                    </select>
+                    </select>
+                      <select name="request_status">
+                       <option value="submitted">Submitted</option>
+                       <option value="inprogress">Inprogress</option>
+                       <option value="completed">Completed</option>
+                    </select>
+                    <input type="search" name="request_search">
+                    <input id="filter-btn" type="submit" value="Submit">
+                  </fieldset>
+                </form>
+              </div> -->
+              <!--Request List-->
+              <table>
+                  <tr>
+                    <th>User ID</th>
+                    <th>date</th>
+                    <th>Geographical location</th> 
+                    <th>Nature of incidence</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th colspan="4">Actions</th>
+                </tr>
+                </tr>
+                <tr>
+                  <td>4000</td>
+                    <td>12/22/2014</td>
+                    <td>Mattugga trading</td> 
+                    <td>Redflag</td>
+                    <td>Theft of public funds by a police officer</td>
+                    <td>Draft</td>
+                    <td><img src="../img/icons/accept.png" width="20px" height="20px" alt="inprogress" title="Mark Inprogress"></td>
+                    <td><img src="../img/icons/complete.png" width="20px" height="20px" alt="completed" title="Mark Completed"></td>
+                    <td><img src="../img/icons/delete.png" width="20px" height="20px" alt="discard" title="Discard Request"></td>
+                    <td><img src="../img/icons/view.png" width="20px" height="20px" alt="view" title="View Details"></td>
+                </tr>
+                <tr>
+                  <td>1002</td>
+                    <td>12/22/2014</td>
+                    <td>Mattugga trading</td> 
+                    <td>Redflag</td>
+                    <td>Theft of public funds by a police officer</td>
+                    <td>Draft</td>
+                    <td><img src="../img/icons/accept.png" width="20px" height="20px" alt="inprogress" title="Mark Inprogress"></td>
+                    <td><img src="../img/icons/complete.png" width="20px" height="20px" alt="completed" title="Mark Completed"></td>
+                    <td><img src="../img/icons/delete.png" width="20px" height="20px" alt="discard" title="Discard Request"></td>
+                    <td><img src="../img/icons/view.png" width="20px" height="20px" alt="view" title="View Details"></td>
+                </tr>
+                <tr>
+                  <td>1003</td>
 
-                    <button id = "submit" type = "submit" value ="submit" >submit</button>
-</div>
-            </div>
-            <h1 id ="embezzle"  onclick="Embezzle()">2. Embezzlemtnt by pharmacist Nanjego</h1>
-            <div id = "embezzlement">
-                    <p class = "title">date of offense:</p>
-                    <p> 12,02,2024</p>
-                   <p class = "title">form of corruption:</p>
-                   <p> embezzlement</p> 
-                   <p class = "title">place where corruption was done:</p>
-                   <p>Nakapiriiti pharmacy</p>
-                   <p class = "title">Name of offending officer</p>
-                   <p> Nanjego</p>
-                  <p class = "title">description of event:</p>
-                    <p> Najego without authorisatoin went to teh pharmacy at night and took a box of drugs and stored tehm in her drugshop.</p><br>
-                   <p class = "title">My Recomendation:</p>
-                   <p id = "intervantions"> Kindly chase the nigger from that pharmacy she is a thief</p>
-                   <p class = "title">status</p>
-                   <p id = "currentstatus"> Under Investigation</p>
-                    <button onclick="Changestatus()">edit report status</button>
-                    <input id = "changestatus" type = "text" placeholder = "Enter current Report Status">
-
-                    <button id = "submit" type = "submit" value ="submit" >submit</button>
-                  </fieldset>        
+                  <td>12/22/2014</td>
+                  <td>Mattugga trading</td> 
+                  <td>Redflag</td>
+                  <td>Theft of public funds by a police officer</td>
+                  <td>Draft</td>
+                  <td><img src="../img/icons/accept.png" width="20px" height="20px" alt="inprogress" title="Mark Inprogress"></td>
+                  <td><img src="../img/icons/complete.png" width="20px" height="20px" alt="completed" title="Mark Completed"></td>
+                  <td><img src="../img/icons/delete.png" width="20px" height="20px" alt="discard" title="Discard Request"></td>
+                  <td><img src="../img/icons/view.png" width="20px" height="20px" alt="view" title="View Details"></td>
+                </tr>
+              </table>
             </div>
             
-        </div>
-  </div>
+          </div>
 
-  
-    </div>
-    <footer>
-        <div class = "contacts">
-                <p>contact us</p> <br>
-            tel:0412586954<br>
-            email:ireporter@irep.com</div>
-           <div class = "about">
-               <p>about us</p><br>
-                our mission and objectives<br>
-                privacy policy 
-           </div>
-           <div class = "info">
-            <p>corruption</p><br>
-                What is corruption<br>
-                how does it affect you<br>
-                current statistics on corruption
-        </div>
-        <div class = "info">
-                <p>app user guide</p><br>
-                    user guide<br>
-                    click here to view details<br>
-                    
-            </div>
-        </div> 
-</footer>  
-    </body>
+          <footer>
 
- 
+              <div class="col4">
+                <h4>Our Partners</h4>
+                <ul>
+                  <li>Andela Uganda</li>
+                  <li>Andela Nigeria</li>
+                </ul>
+        
+              </div>
+              <div class="col4">
+                <p>Copyright 2019</p>
+              </div>
+              <div class="col4 ">
+                <h4>Contact Us</h4>
+                <ul>
+                  <li>Website: www.ireporter.com</li>
+                  <li>Email: user@ireporter.com</li>
+                  <li>Tel: +07445478554</li>
+                </ul>
+              </div>
+              <span class="clear"></span>
+            </footer>
+            
+          </body>
+          
+        </html>

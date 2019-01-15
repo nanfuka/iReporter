@@ -287,7 +287,259 @@ form input[type="submit"]{
 	width: 100%;
 	max-height: 70px
 }
+/* #container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+  background: rgb(49, 49, 49);
+  color: #fff;
+  padding: 50px 0;
+} */
+
+#container * {
+  box-sizing: border-box;
+
+  
+}
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex-outer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-inner {
+  padding: 0 8px;
+  justify-content: space-between;  
+}
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 220px;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  padding: 15px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+.flex-inner li {
+  width: 100px;
+}
+.navigation{
+  display: flex;
+  background-color: rgb(14, 13, 13);
+  justify-content: flex-end;
+  color: white;
+
     
+}
+.navigation a{
+  display: inline;
+  color:white;
+  padding-right: 2%;
+  text-decoration: none;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 120%;
+}
+.formheading{
+  text-align: center;
+}
+
+.navigation li{
+    font-size: 120%;
+    padding-left: 1%;
+}
+.subheader{
+  background-color: aliceblue;
+  font-size: 1%;
+  text-align: center;
+  margin-bottom: 1%;
+}
+button{
+  
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: rgb(52, 56, 52);
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+      margin-bottom:2%; 
+    }
+
+#corruptioncases h1{
+background-color: pink;
+}
+#changestatus{
+display: none;
+float:center;
+}
+#bribedetail{
+  display: none;
+  
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  background-color: antiquewhite;
+  color: black;
+}
+#editintervation{
+  display: none;
+  text-align: center;
+}
+#editlocation{
+  display: none;
+}
+#submits{
+  display: none;
+}
+.pops{
+  text-align: center;
+}
+.pops input{
+  width: 100%;
+  height: 1%;
+}
+.pops button{
+  text-align: center;
+  
+}
+#submit{
+  display: none;
+}
+#editlocation{
+  display: none;
+}
+.title{
+  background-color: #f2f2f2;
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+#embezzlement{
+  display: none;
+  text-align: center;
+  background-color: antiquewhite;
+  color: black;
+  padding-left: 20%;
+  
+}
+    
+    button:hover {background-color: #3e8e41}
+    
+    button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+#bribe:hover{
+background-color: #666;
+}
+#embezzle:hover{
+background-color: #666;
+}
+#logo{
+font-family: fantasy;
+display: flex;
+justify-content: flex-start;
+}
+footer{
+display: flex;
+justify-content: space-evenly;
+background-image: url(../img/shout.jpg) 
+}
+input{
+width: 100%;
+}
+@media screen and (max-width: 600px){
+footer {
+flex-direction: column;
+background-image: none;
+text-align: center;
+
+} 
+/* input[type =text], select, placeholder, textarea{
+width: 100%;
+max-width: 500px;
+box-sizing: border-box;
+resize: vertical;
+} */
+button{
+
+font-size: 10px;
+
+}
+label{
+text-transform: lowercase;
+font-size: 100%;
+}
+.flex-outer li label,
+.flex-outer li p {
+padding: 7px;
+font-weight: 200;
+letter-spacing: .09em;
+text-transform: lowercase;
+}
+}
+  
 
 
 @media screen and (max-width: 1270px) {
