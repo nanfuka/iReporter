@@ -504,7 +504,9 @@ justify-content: flex-start;
 footer{
 display: flex;
 justify-content: space-evenly;
-background-image: url(../img/shout.jpg) 
+/* background-image: url(../img/shout.jpg); */
+color: #000;
+
 }
 input{
 width: 100%;
