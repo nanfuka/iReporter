@@ -24,6 +24,7 @@ function AdminLogin(){
 function Signup(){
     document.getElementById("signin").style.display = "none"
     document.getElementById("signup").style.display = "block"
+    document.getElementById("admin-login").style.display = "none"
     // document.getElementById("signin").style.display = "block"
 
     

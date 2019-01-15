@@ -1,101 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel = "stylesheet"
-type = "text/css"
-href = "css/style.css" />
- <!-- <script src = "js/general.js" -->
-</head>
-<body>
-<script src = "js/general.js"></script> 
-<p id = "logo">I-reporter</p>
-<div class = "nav">
-    <!-- <p id = "logo">I-reporter</p> -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">      
+		<title>Ireporter</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src = "js/general.js"></script> 
+	</head>
 
-    <div class = "mainnav">
-    <p><a href = "index.html">home</a></p>
-    
-    <p id = "login" onclick="Login()">userlogin</p>
-    
-    <p id = "signups" onclick = "Signup()">signup</p>
-    <!-- <li id = "signup" onclick="Signup()">signup</li> -->
-</div>
-
-    <div class = "medianav">
-            
-        <div class="dropdown">
-             
-            <button class="dropbtn"><img src="img/nav.png" alt="logo"></button>
-            <div class="dropdown-content">
-            <a href ="index.html"></a>
-              <a id = "login" onclick="Login()">userlogin</a>
-              <a href = "index.html">home</a>
-              <a id = "signups" onclick = "Signup()">signup</a>
-            </div>
-          </div>
-    </div>
-
- 
-</div>
-<div class = "mainbody">
-<div id = "signin">
-    <form action="html/user_dash.html">
-    <P class = "header">USER-LOGIN</P>
-    <p class = "in">Username:</p> <input type = "text" name = Username required>
-    <p class = "in">Password:</p> <input type = "password" name = password required>
-    <input type = "submit" value = "Submit">
-    </form>
-</div>
-<div id = "signinadmin">
-        <form action="html/admin_dash.html">
-        <P class = "header">ADMIN-LOGIN</P>
-        <p class = "in">Username:</p> <input type = "text" name = Username required>
-        <p class = "in">Password:</p> <input type = "password" name = password required>
-        <input type = "submit" value = "Submit">
-        </form>
-    </div>
-
-<div id = "signup">
-    <P class = "header">SIGNUP</P>
-    <p class = "in">Username:</p> <input type = "text" name = Username required>
-    <p class = "in">Email:</p> <input type = "email" name = email required>
-    <p class = "in">Password:</p> <input type = "password" name = password required>
-    <input type = "submit" value = "Submit">
-</div>
+	<body class="home-page" >
 
 
+	<div id="container">
 
-<div id ="main-message" style="background-image: url(img/cor.jpg);">
-    <div class = "main" > 
-            <h1>REPORT CORRUPTION</h1><br>
+		<header class="header">
+			<div class="company-banner">
+				<img src="img/log.png" alt="company-logo>" >
+				<h1>I-reporter</h1><span class="clear"></span>
+			</div>
 
-            
-            
-        </div>
-</div>
-<footer>
-        <div class = "contacts">
-                <p>contact us</p> <br>
-            tel:0412586954<br>
-            email:ireporter@irep.com</div>
-           <div class = "about">
-               <p>about us</p><br>
-                our mission and objectives<br>
-                privacy policy 
-           </div>
-           <div class = "info">
-            <p>corruption</p><br>
-                What is corruption<br>
-                how does it affect you<br>
-                current statistics on corruption
-        </div>
-        <div class = "info">
-                <p>app user guide</p><br>
-                    user guide<br>
-                    click here to view details<br>
-                    
-            </div>
-        </div> 
-</footer>
-</div>
+			<nav>
+				<ul class="menu">
+					<li class="selected"><a href="index.html">Home</a></li>
+					<li></li> <a href="html/signup.html">SignUp</a></li>
+					<li><a href="html/login.html">Login</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="home-content">
+			<div >
+				
+				<p class="app-description"> 
+					Ireporter app, the solution to the corruption problem in Africa by facilitating communication between the policy makers and people at the grassroots
+				</p>
+				<h1 class="page-title"><strong>I-REPORTER</strong> </h1>
+				<div>
+					<form>
+						<button class="btn-large" type="submit"  name="login-btn" formaction="html/login.html">Login</button>
+						<button class="btn-large" type="submit" name ="signup-btn" value="SignUp" formaction="html/signup.html">SignUp</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		</div>
+		
+	</body>
+	
+</html>

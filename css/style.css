@@ -1,303 +1,297 @@
+
 body{
-    background-color: rgb(235, 198, 198);
+	background-color: #302d2d;
+	background-image: url(../img/cor.jpg);
 }
-.mainnav{
-    display:inline;
-    
-    /* justify-content: flex-end; */ 
 
-    color: rgb(252, 244, 244);
-}
-p{
-    
-    padding-right: 10%;
-}
-#login{
-    /* padding-left: 10%; */
-}
-#signups{
-    padding-right: 10%;
-}
-#signin{
-
-    width: 20%;
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-top: 2%;
-    padding-bottom: 5%;
-    display: none;
-  
-  float: right;
-  background-color: rgb(143, 143, 146);
-     
+#container {
+	width:100%;
+	margin: 0 auto;
 }
 #signup{
-
-    width: 20%;
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-top: 2%;
-    padding-bottom: 5%;
-  
-  float: right;
-  background-color: rgb(143, 143, 146);
-  display: none;
-     
-}
-#signinadmin{
-
-  width: 20%;
-  padding-left: 4%;
-  padding-right: 4%;
-  padding-top: 2%;
-  padding-bottom: 5%;
-
-float: right;
-background-color: rgb(143, 143, 146);
-/* display: none; */
-   
+    background-color: aliceblue;
+    width: 30%;
+    margin: 2%;
+    padding: 1%;
+    -ms-flex-item-align: center;
 }
 
-.header{
-  text-align: center;
-  background-color:#4CAF50;
-  padding: 14px 20px;
-  color: white;
+h1{
+	color: #F1F1F1;
+	font-size: 32px	;
+	font-family: 'Lato', sans-serif;
+	
 }
-input[type=text], input[type=password], input[type=email], select {
-  	width: 100%;
-  	padding: 14px 20px;
-  	margin: 0px 0;
-  	display: inline-block;
-  	border: 1px solid #ccc;
-  	box-sizing: border-box;
+h3{
+	text-align: center;
+}
+p,h1,h2,h3,h4,label,legend,.col4 li,table{
+	color: #fff;
 }
 
-textarea, select {
-  	width: 100%;
-  	padding: 14px 20px;
-  	margin: 8px 0;
-  	display: inline-block;
-  	border: 1px solid #ccc;
-  	box-sizing: border-box;
-}
+/* Columns*/
 
-input[type=submit] {
-  	width: 100%;
-  	background-color: #4CAF50;
-  	color: white;
-  	padding: 14px 20px;
-    font-size: 120%;
-  	margin: 8px 0;
-  	border: none;
-  	cursor: pointer;
-
+.col4,.col3,.col6,.col9,.col12 {
+    float: left;
+    padding:10px;
 }
-
-
-input[type=submit]:hover {
-  	background-color: #45a049;
+.col4 {
+    width: 30%;
 }
-.main{
-  display: flex;
-  justify-content: center;
+.col3 {
+    width: 25%;
 }
-
-
-#main{
-/* padding-bottom: 20%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color:white; */
-  /* background: url(../img/shout.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%; */
+.col6 {
+    width: 50%;
 }
-#main-message{
-  display: column;
-  text-align: center;
-  justify-content: space-between;
-  background-color: #B20000;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
-  color: white;
-  justify-content: center;
-  padding-bottom: 15%;
-  padding-top: 10%;
+.col9 {
+    width: 70%;
 }
-.main p{
-  padding-bottom: 70%;
-  text-align: center;
-}
-.main h1{
-  text-align: center;
-}
-
-footer{
-  display: flex;
-justify-content: space-evenly;
-background-image: url(../img/shout.jpg)
-}
-.message{
-  font-size: 200%;
-    
-    color: #B20000;
-    font-family: fantasy;
-
-}
-.sub-header ul{
-  display: flex;
-}
-.userdash{
-  display: column;
-}
-.mainnav{
-    justify-content: flex-end;
+.col12 {
     width: 100%;
-    display: flex;
-    background-color: black;
-}
-.mainnav {
-    display: inline-flex;
- 
- 
-    color: white;
-    padding-right: 10%; 
-      
-}
-/* #signups{
-    /* padding-left: 5%;
-    padding-right: 20%; */
-    /* text-align: right;
-    padding: 10%; */ */
-/* }
-#login{
-    /* padding-left: 20%;
-    padding-right: 30%; */
-/* text-align: center;
-padding: ;
-} */ */
-.nav{
-  display: flex;
-  background-color: rgb(14, 13, 13);
-  justify-content: flex-end;
-  color: white;
-}
-.nav p{
-  display: flex;
-  align-items: flex-start;
-  color: white;
-  padding-right: 2%;
-  /* text-decoration: none; */
-  
-  font-size: 120%; 
-  
-} 
-.nav a{
-  display: inline;
-  color:white;
-  padding-right: 2%;
-  text-decoration: none;
-  
-  font-size: 100%;
-  
-}
-#logo{
-  font-family: fantasy;
-  display: flex;
-  justify-content: flex-start;
-}
-.medianav{
-    display: none;
-}
-/* Dropdown Button */
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding-right: 16px;
-    font-size: 16px;
-    margin-bottom: 2%;
-    border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-      background-color: aqua;
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
-  
-@media screen and (max-width: 600px){
-    .mainbody{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    footer {
-        flex-direction: column;
-     background-image: none;
-     text-align: center;
-    }
-    #signinadmin{
-        display: flex;
-        align-items: center;
-        width: 92%;
-        justify-content: center;
-    }
-    #signin{
-        display: none;
-        align-items: center;
-        width: 100%;
-        justify-content: center;
-    }
-    #signup{
-        display: none;
-        align-items: center;
-        width: 93%;
-        justify-content: center;
-        display: none
-    }
-    .medianav{
-        display: block;
-        float: right;
-        background-color: rgb(31, 27, 27);
-    }
-    .mainnav{
-        display: none;
-    }
-    .nav{
-        background-color: black;
-    }
-    body{
-        width: 100%;
-    }
 }
 
+.col3 .row{
+	padding: 20px
+}
+.clear {
+    clear: both;
+    display: block;
+}
+
+.company-banner img{
+	margin: 0px 15px 0px 20px;
+	width: auto;
+	max-height: 80px;
+	padding: 0;
+}
+.company-banner h1{
+	margin-left: 15px,
+}
+.company-banner img,.company-banner h1{
+	float: left;
+}
+
+.menu{
+	font:1em Georgia;
+	list-style: none;
+	padding: 0;
+	margin;0;
+	background-color: #fff;
+	text-transform: uppercase;
+	/*border-bottom: 3px solid #000;*/
+	/*border-top:1px solid #ddd;*/
+	text-align: center;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.menu li{
+	display:inline-block;
+	padding: 5px 15px 4px 15px;
+}
+
+.menu li a{
+	color: #333333;
+	text-decoration: none;
+	line-height: 3em;
+}
+
+.menu li a:hover {
+	color: #992211;
+}
+
+.menu li.selected{
+	background:#333333;
+}
+
+.menu li.selected a{
+	color:#fff;
+}
+
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #292929;
+}
+
+footer li{
+	text-align: left;
+	list-style: none;
+	margin-left: 20px;
+	line-height: 1.6em;
+}
+
+
+.home-page{
+	background-image: url(../img/bg_home.png);
+	text-align: center;
+
+}
+
+.home-content h1 {
+	border-bottom: 2px solid #fff;
+	border-top:2px solid #fff;
+	color: #F1F1F1;
+	font-family: 'Lato', sans-serif;
+	font-size: 32px	
+	line-height: 4em;
+	padding: 15px 0px 15px 0px;
+	margin: 0 0 4em 0;
+
+}
+.home-page p {
+	color: #F1F1F1;
+	font-family:  "Poppins",sans-serif;
+	font-size: 24px;
+	max-width: 1000px;
+	text-transform: uppercase;
+	line-height: 1.5em;
+	margin: 3em auto 3em auto;
+}
+
+.btn-large,form input[type="submit"]{
+
+	width: 300px;
+	height: 70px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	background-color: #333333;
+	border: 1px solid #fff;
+	color: #ffffff;
+	margin-right: 1em;
+}
+.btn-large:hover{
+	color: #992211;
+	border: 1px solid #992211;
+
+}
+form{
+	padding: 30px;
+}
+
+form input[type="submit"]{
+	width: 100%;
+	max-height: 70px
+}
+
+.home-content{
+	background-color: #00000006;
+
+}
+
+
+
+.product img,.client img{
+	border: 1px solid #fff;
+	width: 100%;
+	max-height: 300px;
+	text-align:center;
+	margin:  auto 0 auto 0;
+}
+.product p,.client p{
+	font-style: "Poppins",sans-serif;
+	margin:  0 auto 1em auto;
+
+}
+.client,.product{
+	border: 1px solid #fff;
+}
+
+#filter-btn{
+	width: 150px;
+	height: 40px;
+}
+form input[type="search"],.filter select{
+	padding: 15px;
+	width: auto;
+	margin: 5px;
+	font-size: 18px;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #1abc9c}
+tr:nth-child(odd){background-color: #2980b9}
+
+.table{
+	min-height: 500px;
+}
+
+.icons img{
+	margin:  15px 0 15px 0;
+}
+
+h1{
+	color: #F1F1F1;
+	font-size: 32px	;
+	font-family: 'Lato', sans-serif;
+	
+}
+h3{
+	text-align: center;
+}
+p,h1,h2,h3,h4,label,legend,.col4 li,table{
+	color: #fff;
+}
+
+/* Columns*/
+
+.col4,.col3,.col6,.col9,.col12 {
+    float: left;
+    padding:10px;
+}
+.col4 {
+    width: 30%;
+  
+}
+.col3 {
+    width: 25%;
+}
+.col6 {
+    width: 50%;
+}
+.col9 {
+    width: 70%;
+}
+.col12 {
+    width: 100%;
+}
+
+.col3 .row{
+	padding: 20px
+}
+.clear {
+    clear: both;
+    display: block;
+}
+form{
+	padding: 30px;
+}
+
+form input[type="text"],form input[type="password"],form input[type="email"],textarea,form select{
+	padding: 15px;
+	width: 80%;
+	margin: 15px;
+	font-size: 18px;
+
+}
+form input[type="submit"]{
+	width: 100%;
+	max-height: 70px
+}
+    
+
+
+@media screen and (max-width: 1270px) {
+  .col3,.col4, .col6,.col9,.col12 {
+    width: 100%;
+  }
+}

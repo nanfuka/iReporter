@@ -142,10 +142,7 @@ button{
         box-shadow: 0 9px #999;
         margin-bottom:2%; 
       }
-#corruption-cases{
-    display: none;
 
-}
 #corruptioncases h1{
   background-color: pink;
 }
